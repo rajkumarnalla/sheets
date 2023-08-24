@@ -1,0 +1,23 @@
+@import '../../../assets/styles/_colors';
+
+.app-hr-tag {
+    border-collapse: collapse;
+
+    tbody {
+        td {
+            border: 1px solid grey;
+            // margin: 2px 5px;
+            font-weight: 500;
+            font-size: 13px;
+            height: 20px;
+            text-align: center;
+            padding: 0;
+            cursor: context-menu;
+        }
+
+        td.app-dt-cell-active {
+            border: 2px solid dodgerblue;
+            height: 17px;
+        }
+    }
+}

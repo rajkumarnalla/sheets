@@ -1,0 +1,25 @@
+<div style="display: flex;">
+    <div class="app-empty-shell"></div>
+    <app-horizontal-tag 
+        [columns]="hTagColumns"
+        [tableWidth]="tableWidth"
+        [tableCellWidth]="hTableCellWidth">
+    </app-horizontal-tag>
+    <app-vertical-tag
+        style="position: absolute;top: 29px"
+        [cells]="vTagCells"
+        [tableCellWidth]="vTableCellWidth">
+    </app-vertical-tag>
+    <app-table-header
+        style="position: absolute;left: 52px;top: 29px;"
+        [columns]="headerColumns"
+        [tableWidth]="tableWidth"
+        [tableCellWidth]="hTableCellWidth">
+    </app-table-header>
+    <app-data-table
+        style="position: absolute;left: 52px;top: 50px;"
+        [rows]="rows"
+        [tableWidth]="tableWidth"
+        [tableCellWidth]="hTableCellWidth">
+    </app-data-table>
+</div>

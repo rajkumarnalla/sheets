@@ -1,0 +1,11 @@
+<div>
+    <table class="app-data-table_header" [ngStyle]="{'width': tableWidth+'px'}">
+        <thead>
+            <th 
+                [ngStyle]="{'width': tableCellWidth+'px'}"
+                *ngFor="let column of columns">
+                {{column}}
+            </th>
+        </thead>
+    </table>
+</div>

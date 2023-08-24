@@ -1,0 +1,13 @@
+<div>
+    <table class="app-hr-tag" [ngStyle]="{'width': tableWidth+'px'}">
+        <thead>
+            <tr>
+                <th 
+                    [ngStyle]="{'width': tableCellWidth+'px'}"
+                    *ngFor="let column of columns">
+                    {{column}}
+                </th>
+            </tr>
+        </thead>
+    </table>
+</div>

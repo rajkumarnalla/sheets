@@ -1,0 +1,15 @@
+<div>
+    <table class="app-hr-tag" [ngStyle]="{'width': tableWidth+'px'}">
+        <tbody>
+            <tr *ngFor="let row of rows; let rowIndex = index">
+                <td
+                    *ngFor="let cell of row; let columnIndex = index, trackBy: trackByFn"
+                    [ngStyle]="{'width': tableCellWidth+'px'}"
+                    id="app-dt-{{rowIndex}}-{{columnIndex}}"
+                    (click)="handleTableCellClick(rowIndex, columnIndex)">
+                    {{cell}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
